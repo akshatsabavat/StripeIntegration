@@ -1,0 +1,10 @@
+[
+  {
+    "priceInDollars": 400,
+    "courseName": "Stock Market 101"
+  },
+  {
+    "priceInDollars": "750",
+    "courseName": "The Way of Mandarin"
+  }
+]

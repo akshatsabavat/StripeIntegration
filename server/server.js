@@ -1,5 +1,6 @@
 require("dotenv").config();
 const express = require("express");
+const userItems = require("../userItems/serverItems.json");
 
 const app = express();
 const port = 4000;
@@ -7,7 +8,8 @@ const port = 4000;
 app.use(express.json());
 app.get("/", (req, res) => {
   try {
-    res.status(200).send("Hi this is the server room");
+    res.status(200).send(userItems);
+    console.log(userItems);
   } catch (err) {
     res.status(500).send(err.message);
   }
